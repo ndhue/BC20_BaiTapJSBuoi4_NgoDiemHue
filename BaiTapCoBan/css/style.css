@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 60%;
+    margin: auto;
+    padding: 50px 0;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+h3{
+    padding-bottom: 20px;
+}
+#btnCheck, #btnChange, #btnAcsend, #btnCheckTri{
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+.result{
+    background-color: #d1e7dd;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #b5e7d1;
+}
+.result i{
+    color: rgb(211, 196, 58);
+}
