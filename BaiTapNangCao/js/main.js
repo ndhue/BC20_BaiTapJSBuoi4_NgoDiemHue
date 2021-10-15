@@ -3,7 +3,7 @@ function checkPreAndNext(){
     var b = document.getElementById("b").value;
     var c = document.getElementById("c").value;
     var preA, nextA, preB, nextB, preC, nextC;
-    if(b%2!=0){  
+    if(b==1 || b==3 || b==5 || b==7 || b==8 || b==10 || b==12){  
         preB = nextB = b;
         preC = nextC = c;
         if(a<31){
@@ -16,7 +16,7 @@ function checkPreAndNext(){
             nextB=Number(b)+1;
         }
     }
-    else if(b%2==0){
+    else if(b==4 || b==6 || b==9 || b==11){
         preB = nextB = b;
         preC = nextC = c;
         if(a<30){
@@ -80,17 +80,17 @@ function checkNgay(){
     var nam = document.getElementById("nam").value;
     var ngay = 0;
     if((nam%400==0) || (nam%4==0 && nam%100!=0)){
-        if(thang==1 || thang==3 || thang==5 || thang==7 || thang==9 || thang==11)
+        if(thang==1 || thang==3 || thang==5 || thang==7 || thang==8 || thang==10 || thang==12)
             ngay = 31;
-        else if(thang==4 || thang==6 || thang==8 || thang==10 || thang==12)
+        else if(thang==4 || thang==6 || thang==9 || thang==11)
             ngay = 30;
         else
             ngay = 29;
     }
     else{   
-        if(thang==1 || thang==3 || thang==5 || thang==7 || thang==9 || thang==11)
+        if(thang==1 || thang==3 || thang==5 || thang==7 || thang==8 || thang==10 || thang==12)
             ngay = 31;
-        else if(thang==4 || thang==6 || thang==8 || thang==10 || thang==12)
+        else if(thang==4 || thang==6 || thang==9 || thang==11)
             ngay = 30;
         else
             ngay = 28;
